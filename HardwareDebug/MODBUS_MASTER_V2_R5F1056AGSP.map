@@ -1,0 +1,80 @@
+Renesas Optimizing Linker (W3.01.00 )             03-Apr-2019 21:19:14
+
+*** Options ***
+
+-subcommand=LinkerMODBUS_MASTER_V2_R5F1056AGSP.tmp
+-device="C:\Renesas\e2_studio\DebugComp\\RL78\RL78\Common\DR5F1056A.DVF"
+-list="MODBUS_MASTER_V2_R5F1056AGSP.map"
+-nooptimize
+-entry=_start
+-auto_section_layout
+-security_id=0
+-debug_monitor=03E00-03FFF
+-input=".\generate\cstart.obj"
+-input=".\generate\stkinit.obj"
+-input=".\src/cg_src\r_cg_cgc.obj"
+-input=".\src/cg_src\r_cg_cgc_user.obj"
+-input=".\src/cg_src\r_cg_it.obj"
+-input=".\src/cg_src\r_cg_it_user.obj"
+-input=".\src/cg_src\r_cg_main.obj"
+-input=".\src/cg_src\r_cg_port.obj"
+-input=".\src/cg_src\r_cg_port_user.obj"
+-input=".\src/cg_src\r_cg_sau.obj"
+-input=".\src/cg_src\r_cg_sau_user.obj"
+-input=".\src/cg_src\r_cg_systeminit.obj"
+-input=".\src/cg_src\r_cg_wdt.obj"
+-input=".\src/cg_src\r_cg_wdt_user.obj"
+-input=".\src/cg_src\u_modbus.obj"
+-library="C:\Program Files (x86)\Renesas\RL78\1_8_0\lib\rl78em4s.lib"
+-library="C:\Program Files (x86)\Renesas\RL78\1_8_0\lib\rl78em4r.lib"
+-library="C:\Program Files (x86)\Renesas\RL78\1_8_0\lib\malloc_n.lib"
+-output="MODBUS_MASTER_V2_R5F1056AGSP.abs"
+-debug
+-nocompress
+-memory=high
+-rom=.data=.dataR,.sdata=.sdataR
+-nomessage
+-nologo
+
+*** Error information ***
+
+W0561520:"user option byte" in ".option_byte" created by device file
+W0561520:"on chip debug" in ".option_byte" created by device file
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+.vect
+                                  00000000  0000007f        80   0
+.constf
+                                  00000080  00000080         0   2
+.sdata
+                                  00000080  00000080         0   2
+.data
+                                  00000082  0000008b         a   2
+.option_byte
+                                  000000c0  000000c3         4   1
+.security_id
+                                  000000c4  000000cd         a   1
+.RLIB
+                                  000000c4  000000c4         0   1
+.SLIB
+                                  000000c4  000000c4         0   1
+.monitor1
+                                  000000ce  000000d7         a   1
+.text
+                                  000000d8  0000022a       153   1
+.textf
+                                  0000022b  00000886       65c   1
+.const
+                                  00002000  000021ff       200   2
+.monitor2
+                                  00003e00  00003fff       200   1
+.bss
+                                  000ff900  000ffb1e       21f   2
+.dataR
+                                  000ffb20  000ffb29         a   2
+.sbss
+                                  000ffe20  000ffe20         0   2
+.sdataR
+                                  000ffe20  000ffe20         0   2

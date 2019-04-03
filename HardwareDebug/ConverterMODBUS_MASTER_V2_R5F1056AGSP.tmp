@@ -1,0 +1,5 @@
+-form=stype
+-output="MODBUS_MASTER_V2_R5F1056AGSP.mot"
+-byte_count=10
+-nomessage
+-nologo

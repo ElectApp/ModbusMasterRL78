@@ -1,0 +1,32 @@
+-device="C:\Renesas\e2_studio\DebugComp\\RL78\RL78\Common\DR5F1056A.DVF"
+-list="MODBUS_MASTER_V2_R5F1056AGSP.map"
+-nooptimize
+-entry=_start
+-auto_section_layout
+-security_id=0
+-debug_monitor=03E00-03FFF
+-input=".\generate\cstart.obj"
+-input=".\generate\stkinit.obj"
+-input=".\src/cg_src\r_cg_cgc.obj"
+-input=".\src/cg_src\r_cg_cgc_user.obj"
+-input=".\src/cg_src\r_cg_it.obj"
+-input=".\src/cg_src\r_cg_it_user.obj"
+-input=".\src/cg_src\r_cg_main.obj"
+-input=".\src/cg_src\r_cg_port.obj"
+-input=".\src/cg_src\r_cg_port_user.obj"
+-input=".\src/cg_src\r_cg_sau.obj"
+-input=".\src/cg_src\r_cg_sau_user.obj"
+-input=".\src/cg_src\r_cg_systeminit.obj"
+-input=".\src/cg_src\r_cg_wdt.obj"
+-input=".\src/cg_src\r_cg_wdt_user.obj"
+-input=".\src/cg_src\u_modbus.obj"
+-library="C:\Program Files (x86)\Renesas\RL78\1_8_0\lib\rl78em4s.lib"
+-library="C:\Program Files (x86)\Renesas\RL78\1_8_0\lib\rl78em4r.lib"
+-library="C:\Program Files (x86)\Renesas\RL78\1_8_0\lib\malloc_n.lib"
+-output="MODBUS_MASTER_V2_R5F1056AGSP.abs"
+-debug
+-nocompress
+-memory=high
+-rom=.data=.dataR,.sdata=.sdataR
+-nomessage
+-nologo
